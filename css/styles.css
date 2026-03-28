@@ -9,7 +9,6 @@ body
 {
     background: var(--body-background-color);
     font-family: var(--font-family);
-    width: 100vw;
     color: white;
 }
 
@@ -17,12 +16,11 @@ header
 {
     background-color: var(--header-and-button-background-color);
     width: 100vw;
-    max-height: 11vh;
+    height: 9vh;
 }
 
 header p
 {
-    color: white;
     font-size: .875rem;
     text-transform: uppercase;
 }
@@ -50,6 +48,14 @@ header p
 
 .menu
 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+}
+
+.menu
+{
     visibility: hidden;
     position: relative;
     background-color: var(--header-and-button-background-color);
@@ -57,14 +63,6 @@ header p
     padding: 1rem;
     min-width: 100vh;
     list-style: none;
-}
-
-.menu
-{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    text-align: center;
 }
 
 .menu a
@@ -148,7 +146,7 @@ section a
         flex-direction: row;
         visibility: visible;
         position: relative;
-        height: 8vh;
+        height: 7vh;
         justify-content: space-between;
         gap: 2rem;
         bottom: 1rem;
@@ -188,6 +186,7 @@ section a
         padding-right: 17.25rem;
         padding-top: 2.25rem;
     }
+
 }
 
 @media (min-width: 1037px)
@@ -202,7 +201,7 @@ section a
     {
         flex-direction: row;
         position: relative;
-        height: 8vh;
+        height: 7vh;
         justify-content: space-between;
         gap: 2rem;
         bottom: 4rem;
